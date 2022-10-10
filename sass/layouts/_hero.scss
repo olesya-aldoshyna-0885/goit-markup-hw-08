@@ -1,0 +1,90 @@
+.hero {
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 200px 0px;
+    background-color: var(--dark-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__title {
+    max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: var(--last-color);
+}
+
+.hero__btn {
+    @extend %button;
+    min-width: 216px;
+    border-radius: 4px;
+}
+
+/*модальное окно*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity var(--changes), visibility var(--changes);
+
+    &--is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    display: block;
+    min-width: 528px;
+    min-height: 581px;
+    background-color: var(--last-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform var(--changes);
+}
+
+.backdrop--is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform var(--changes);
+}
+
+.modal__btn {
+    position: absolute;
+    display: flex;
+    top: 8px;
+    right: 8px;
+    left: 490px;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--last-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform var(--changes), fill var(--changes);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+}
+}

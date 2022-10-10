@@ -1,0 +1,85 @@
+%link {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color var(--changes), background-color var(--changes), fill var(--changes), border-color var(--changes);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+%button {
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--last-color);
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: color var(--changes), box-shadow var(--changes), background var(--changes);
+    cursor: pointer;
+    border: transparent;
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+        color: var(--last-color);
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+        border-radius: 4px;
+        border: transparent;
+    }
+}
+
+%btn {
+    padding: 6px 22px;
+    border-radius: 4px;
+    font-family: var(--main-ff);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    background-color: var(--accent-color);
+    color: var(--last-color);
+    cursor: pointer;
+    border: transparent;
+    transition: color var(--changes), background-color var(--changes);
+}
+
+%subtitle {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--last-color);
+}
+
+%second-title {
+    margin-right: 0 auto;
+    align-items: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+%example-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--last-color);
+}
+
+%third-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+}

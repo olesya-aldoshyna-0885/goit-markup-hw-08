@@ -1,0 +1,100 @@
+.footer {
+    padding: 60px 0;
+    background-color: var(--dark-color);
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+/*блок адрес*/
+.adress {
+    flex-grow: 1;
+}
+
+.logo--white {
+    width: 145px;
+    color: var(--last-color);
+}
+
+.adress__item:not(:first-child) {
+    margin-top: 9px;
+}
+
+.adress__link {
+    @extend %link;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--last-color);
+}
+
+.adress__link--grey {
+    color: rgba(255, 255, 255, 0.6);
+}
+    
+/*блок соцiальний*/
+.social {
+    margin-left: 70px;
+    margin-right: 93px;
+}
+.social__subtitle {
+    @extend %subtitle;
+}
+
+.social__list {
+    display: flex;
+    gap: 10px;
+
+    & .soc-link {
+        fill: var(--last-color);
+        background: rgba(255, 255, 255, 0.1);
+        transition: fill var(--changes), background-color var(--changes);
+    }
+
+    & .soc-link:hover,
+    & .soc-link:focus {
+        fill: var(--last-color);
+        background-color: var(--accent-color);
+    }
+}
+
+/*блок розсилка*/
+.mail__subtitle {
+    @extend %subtitle;
+}
+.send {
+    display: flex;
+    gap: 12px;
+}
+
+.send__text {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    color: var(--last-color);
+    background-color: var(--dark-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.send__btn {
+    @extend %button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    width: 200px;
+    gap: 10px;
+    border-radius: 4px;
+    border: transparent;
+}
+
+.send__icon {
+    @extend .field__icon;
+}

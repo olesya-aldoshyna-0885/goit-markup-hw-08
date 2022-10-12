@@ -1069,9 +1069,6 @@ body {
   padding-bottom: 60px;
 }
 
-.footer-container {
-  gap: 70px;
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container {
     padding-left: 76px;
@@ -1191,8 +1188,10 @@ body {
   }
 }
 
-.conteiner-form {
-  margin-top: 0px;
+@media screen and (min-width: 1200px) {
+  .conteiner-form {
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1258,12 +1257,10 @@ body {
   margin-left: 10px;
 }
 
-.footer-inner {
-  margin-right: 70px;
-}
-
-.footer__wrap {
-  margin-bottom: 60px;
+@media screen and (min-width: 1200px) {
+  .footer__wrap {
+    margin-right: 70px;
+  }
 }
 
 .footer__title {

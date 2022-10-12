@@ -5,9 +5,7 @@
     padding-bottom: 60px;
     
 }
-.footer-container {
-    gap: 70px;
- 
+.footer-container { 
     @include tablet{
         padding-left: 76px;
         padding-right: 76px;
@@ -120,7 +118,9 @@
     }
 }
 .conteiner-form {
-    margin-top: 0px;
+    @include descktop {
+        margin-left: auto;
+    }
    
 }
 .footer-form {
@@ -193,13 +193,11 @@
     margin-left: 10px;
     
 }
-.footer-inner {
-    margin-right: 70px;
-}
 
 .footer__wrap{
-   margin-bottom: 60px;
-   
+    @include descktop {
+   margin-right: 70px;
+    }
 }
 .footer__title{
     width: 207px;

@@ -23,11 +23,11 @@
     letter-spacing: 0.03em;
 }
 
-.navigation__logo {
-    padding: 24px 0 25px 0;
-    margin-right: 93px;   
-    color: inherit;
-}
+
+// .navigation__logo {
+//     margin-right: auto;  
+//     color: inherit;
+// }
 
 .logo--blue {
     color: var(--accent-color);
@@ -101,6 +101,7 @@
     &:focus {
         color: var(--accent-color);
     }
+
 }
 
 .contact__icon--active {

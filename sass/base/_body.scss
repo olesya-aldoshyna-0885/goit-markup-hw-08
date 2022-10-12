@@ -3,3 +3,9 @@ body {
     color: var(--primary-text-color);
     margin: 0;
 }
+
+*,
+*::before,
+*::after {
+    outline: 1px solid red;
+}

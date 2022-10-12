@@ -7,16 +7,15 @@
 }
 .footer-container {
     gap: 70px;
-
-  
-
+ 
     @include tablet{
         padding-left: 76px;
         padding-right: 76px;
     }
     @include descktop{
         display: flex;
-
+        justify-content: center;
+        align-items: baseline;
        }
 
 }
@@ -194,8 +193,13 @@
     margin-left: 10px;
     
 }
+.footer-inner {
+    margin-right: 70px;
+}
+
 .footer__wrap{
    margin-bottom: 60px;
+   
 }
 .footer__title{
     width: 207px;

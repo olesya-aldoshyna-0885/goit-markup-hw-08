@@ -7,6 +7,9 @@
     gap: 30px;
     justify-content: center;
 
+    @include descktop {
+        flex-wrap: nowrap;
+    }
 }
 
 .client__link{

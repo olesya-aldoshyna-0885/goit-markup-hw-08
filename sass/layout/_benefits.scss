@@ -19,6 +19,7 @@
     
     @include descktop{
         display: flex;
+        flex-wrap: nowrap;
         gap: 30px;
 }
 .benefits__contents {

@@ -1,0 +1,21 @@
+@mixin soc-icon ($w:44px, $h:44px, $br:50%, $d:flex, $ai:center,
+$jc:center) {
+    width: $w;
+    height: $h;
+    border-radius: $br;
+    display: $d;
+    align-items: $ai;
+    justify-content: $jc;
+}
+@mixin mobile {
+    @media screen and (min-width:480px){
+        @content;}
+}
+@mixin tablet {
+    @media screen and (min-width:768px){
+        @content;}
+}
+@mixin descktop {
+    @media screen and (min-width:1200px){
+        @content;}
+}

@@ -1,13 +1,20 @@
 :root {
-    --main-ff: 'Roboto', sans-serif;
-    --second-ff: 'Raleway';
-    --text-color: #212121;
+    --primary-font: 'Roboto', sans-serif; 
+    --secondary-font: 'Raleway', sans-serif;
+
+
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
     --accent-color: #2196F3;
-    --second-color: #757575;
-    --last-color: #FFFFFF;
-    --background-color: #E5E5E5;
-    --dark-color: #2F303A;
-    --soc-color: #AFB1B8;
-    --grey-color: #F5F4FA;
-    --changes: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --accent-color-title: #FFFFFF;
+    --accent-color-logo: #000000;
+    --backgroung-accent: #2F303A;
+    --transparent-color: rgba(255, 255, 255, 0.6);
+    --icon-color: #AFB1B8; 
+    --border-color:#ECECEC;
+    --background-accent-color:#F5F4FA;
+    --background-color-btn:#188CE8;
+
+    --transition-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }

@@ -1,0 +1,98 @@
+.item-port{
+
+        width: 370px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid var(--border-color);
+        border-left: 1px solid var(--border-color);
+        border-right: 1px solid var(--border-color);
+        box-sizing: border-box;
+
+
+        transition: var(--transition-function);
+
+        &:hover,
+        &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
+
+        
+
+        &:nth-child(3n) {
+                margin-right: 0;}
+        &:nth-child(n+7) {
+                margin-bottom: 0;}
+}
+.title-port {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: var(--title-text-color);
+        margin: 0;
+}
+.view {
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.03em;
+        color: var(--primary-text-color);
+        margin: 0;
+        margin-top: 0 ;
+}
+.service-port {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+
+        color: var(--accent-color-title);
+        background: rgba(33, 150, 243, 0.9);
+
+        padding-left: 24px;
+        padding-top: 63px;
+        padding-right: 24px;
+        padding-bottom: 63px;
+
+        height: 100%;
+        transform: translateY(101%);
+        transition: var(--transition-function);
+
+        .link-port:hover &,
+        .link-port:focus &
+         {
+                transform: translateY(0); }
+
+}
+
+.port-top-wrap {
+        position: relative;
+        overflow: hidden;
+}
+
+img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-right: 0;
+}
+
+.list-port {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+}
+
+
+.content-item {
+        padding-left: 24px;
+        padding-top: 20px;
+        padding-right: 24px;
+        padding-bottom: 20px;
+}
+
+
+.link-port{
+        text-decoration: none;}

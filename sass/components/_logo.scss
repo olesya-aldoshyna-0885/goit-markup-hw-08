@@ -1,0 +1,30 @@
+.logo {
+    @extend %common-logo;
+    color: var(--accent-color);
+    
+ 
+   
+}
+
+.logo__header {
+    @extend %common-logo;
+    color: var(--accent-color-logo);
+}
+.footer-logo {
+    @extend %common-logo;
+    color: var(--accent-color-title);
+    margin-bottom: 20px;
+}
+.footer__logo{
+    width: 154px;
+    margin: 0 auto;
+    @include descktop {
+        margin-left: 0;
+    }
+}
+.heder__logo{
+    margin-right: 80px;
+    @include descktop{
+        margin-right: 95px;
+    }
+}

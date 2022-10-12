@@ -1,8 +1,21 @@
-html {
-    box-sizing: border-box;
+.link {
+    display: flex;
+    text-decoration: none;
 }
-
-body {
-    font-family: var(--main-ff);
-    color: var(--text-color);
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-right: 0;
 }

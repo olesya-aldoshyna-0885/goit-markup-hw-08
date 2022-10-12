@@ -1,8 +1,10 @@
 /*нашi переваги*/
 .benefit {
     display: flex;
-    column-gap: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
+
 .benefit__text {
     margin-bottom: 0;
     font-size: 14px;
@@ -12,7 +14,7 @@
 }
 
 .benefit__icon {
-    width: 270px;
+    width: 450px;
     height: 120px;
     margin-bottom: 30px;
     display: flex;
@@ -20,22 +22,38 @@
     align-items: center;
     background: var(--grey-color);
     border-radius: 4px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 
 .benefit__item {
     flex-basis: calc((100% - 90px) / 4);
 }
+
 .benefit__item>.benefit__subtitle {
     @extend %subtitle;
     margin-bottom: 10px;
     color: var(--text-color);
 }
 
+@media screen and (max-width: 768px) {
+    .benefit__subtitle {
+        text-align: center;
+}
+}
+
 /*Чим ми займаємося*/
 .section__title--second {
     @extend %second-title;
-    @media screen and (max-width: 768px) {
-        font-size: 28px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
     }
 }
 
@@ -63,49 +81,45 @@
 }
 
 .example__title {
-@extend %example-title;
+    @extend %example-title;
 }
 
- /*Наша команда*/
+/*Наша команда*/
 .section--grey {
     background: var(--grey-color);
 }
 
- .team {
+.team {
+    margin-top: 30px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    margin-top: 30px;
-    justify-content: center;
 
-    @media screen and (min-width: 1200px) {
-        margin-top: 50px;}
- }
+    @media screen and (min-width: 1200px) {    
+        margin-top: 50px;
+    }
+}
 
- .team__card {
+.team__card {
     text-align: center;
     background-color: var(--last-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
     @media screen and (min-width: 480px) {
-        .team__card {
-            width: 450px;
-        }
+        width: 450px;
     }
-    
+
     @media screen and (min-width: 768px) {
-    .team__card {
         width: calc((100% - 30px) / 2);
-    }
     }
 
     @media screen and (min-width: 1200px) {
-    .team__card {
-        width: 270px;
+        width: calc((100% - 90px) / 4);
     }
-    }
- 
+}
+
 .team__box {
     padding: 30px 0;
 }
@@ -148,26 +162,23 @@
 }
 
 /*Постійні клієнти*/
-.customer__list {
+.customer__list {    
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
+    justify-content: center;
+    margin-top: 30px;
     align-items: center;
-    column-gap: 30px;
+    gap: 30px;
+
+    @media screen and (min-width: 1200px) {        
+        margin-top: 50px;
+    }
 }
 
 .customer__item {
-    width: 220px;
+    width: 170px;
     height: 92px;
     border-radius: 4px;
-
-    @media screen and (min-width: 768px) {
-        width: 226px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 170px;
-    }
 }
 
 .customer__link {
@@ -188,4 +199,3 @@
         border: 1px solid var(--accent-color);
     }
 }
- }

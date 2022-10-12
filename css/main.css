@@ -113,12 +113,6 @@ body {
   margin: 0;
 }
 
-*,
-*::before,
-*::after {
-  outline: 1px solid red;
-}
-
 .container {
   width: 100%;
   padding-left: 15px;

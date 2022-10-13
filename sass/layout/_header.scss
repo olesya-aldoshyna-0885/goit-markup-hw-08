@@ -49,9 +49,13 @@
     background: var(--accent-color);
     border: none;
     border-radius: 2px;
+    @include tablet {
+        bottom: -8px;
+    }
 }
 }
 .contact-list__header-contact {
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -59,7 +63,8 @@
     color: var(--primary-text-color);
     text-decoration: none;
     transition: var(--transition-function);
-    
+    align-items: center;
+
     &:hover,
     &:focus  {
     color: var(--accent-color);}
@@ -147,5 +152,6 @@
 }
 .contact-list__item{
     display: flex;
-
+    align-items: center;
+    justify-content: flex-start;
 }

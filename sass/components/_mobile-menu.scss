@@ -11,9 +11,21 @@
   transition: opacity var(--transition-function), visibility var(--transition-function);
 
 }
+
+.mobile-menu__site-nav-list {
+    margin-bottom: auto;
+}
+
+.mobile-menu__container {
+    position: relative;
+
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
 .mobile-menu__close-btn{
     position: absolute;
-    top: 10px;
+    top: 22px;
     right: 15px;
    background-color: transparent;
    border: none;
@@ -27,11 +39,8 @@
          fill: var(--accent-color);}
 }
 
-.mobile-menu__container{
-    position: relative;
-    padding-left: 40px;
-    padding-top: 40px;
-}
+
+
 .mobile-menu.is-open{
     opacity: 1;
     visibility: visible;
